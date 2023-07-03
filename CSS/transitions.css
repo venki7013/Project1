@@ -1,0 +1,27 @@
+img:hover {
+    width: 200px;
+    height: 200px;
+    transition: width 2s;
+    transform: 2s;
+    cursor: pointer;
+}
+img {
+    transition-timing-function: ease-in-out 3s;
+}
+body {
+    background-color: green;
+}
+div {
+    width: 100%;
+    height: 400px;
+    animation-name: example;
+    background-image: url(/Imges/tree.jpg);
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes example {
+    0%   {background-image: url(/Imges/tree.jpg);}
+    35%  {background-image: url(/Imges/swing.jpg);}
+    70%  {background-image: url(/Imges/cave.jpg);}
+    100% {background-image: url(/Imges/nature.jpg);}
+  }

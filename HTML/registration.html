@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="/CSS/reg.css">
+</head>
+<body>
+  <h1 style="text-align:center; color: yellow; font-family: 'Times New Roman', Times, serif;">Student Registration Form</h1>
+  <div class="form-container">
+    <form>
+      <div class="form-group">
+        <label for="fname">Enter First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="First name" required>
+      </div>
+      <div class="form-group">
+        <label for="mname">Enter Middle Name:</label>
+        <input type="text" id="mname" name="mname" placeholder="Middle name">
+      </div>
+      <div class="form-group">
+        <label for="lname">Enter Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Last name" required>
+      </div>
+      <div class="form-group">
+        <label for="gen">Select Gender:</label>
+        <input type="radio" id="male" name="gen">Male
+        <input type="radio" id="female" name="gen">Female
+        <input type="radio" id="others" name="gen">Others
+      </div>
+      <div class="form-group">
+        <label for="dob">Enter Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Enter Your Age:</label>
+        <input type="number" id="age" name="age" min="18" max="35" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Enter Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[+]91[0-9]{10}" placeholder="+91XXXXXXXXXX" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Enter Your Address:</label>
+        <textarea name="address" rows="6" cols="20" style="resize: none;" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="clr">Select Your Favorite Color:</label>
+        <input type="color" name="clr"> 
+      </div>
+      <div class="form-group">
+        <fieldset>
+          <legend>Select The Programming Languages:</legend>
+          <input type="checkbox" id="lang1" name="lang">Java
+          <input type="checkbox" id="lang2" name="lang">.Net
+          <input type="checkbox" id="lang3" name="lang">PHP
+          <input type="checkbox" id="lang4" name="lang">Python
+        </fieldset>
+      </div>
+      <div class="form-group">
+        <label for="course" multiple>Select the course you want to learn:</label>
+        <select id="course" name="course">
+          <option value="java">Java</option>
+          <option value="python" selected>Python</option>
+          <option value=".net">.Net</option>
+          <option value="php">PHP</option>
+          <option value="sql">SQL</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="emailid">Enter Your Email ID:</label>
+        <input type="email" id="emailid" name="emailid" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <label for="pwd">Enter Your Password:</label>
+        <input type="password" id="pwd" name="pwd" placeholder="Password" required>
+      </div>
+      <div class="form-group">
+        <label for="pwd1">Confirm Your Password:</label>
+        <input type="password" id="pwd1" name="pwd1" placeholder="Confirm Password" required>
+      </div>
+      <div class="form-group">
+        <label for="url1">LinkedIn:</label>
+        <input type="url" name="url1" id="url1" placeholder="LinkedIn URL">
+      </div>
+      <div class="form-group">
+        <label for="resume">Upload Your Resume:</label>
+        <input type="file" name="resume" accept=".docx,.pdf">
+      </div>
+      <div class="form-group">
+        <input type="checkbox" name="check">By creating an account you agree to our <a href="#" target="_blank" style="color:yellow">Terms & Privacy</a>.
+      </div>
+      <div class="form-group">
+        <button type="submit" name="register">Register</button>
+        <button type="reset" name="reset">Reset</button>
+      </div> 
+    </form>
+  </div>
+  <h3 style="color:black;">Cat video:</h3>
+  <video src="/Video/catvideo.mp4" width="70%" height="240" controls="controls" loop="1" muted autoplay></video>
+<br>
+<h3 style="color: black">Believer.mp3:</h3>
+<audio src="/Audio/Believer.mp3" width="70%" height="240" controls="controls" loop="1" muted></audio>
+</body>
+</html>

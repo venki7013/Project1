@@ -1,0 +1,42 @@
+        body {
+               background-color: orange;
+             }
+        .container {
+          margin-top: 150px;
+          background-color: rgb(24, 168, 158);
+          padding: 20px;
+          width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        input {
+            text-align: right;
+            border-radius: 20px;
+            border-color: green;
+            padding: 8px;
+            border: 2px solid red;
+            font-size: 30px;
+            width: 593px;
+            margin-bottom: 5px;
+        }
+        button {
+            border-radius: 20px;
+            border-color: green;
+            width: 150px;
+            text-align: center;
+            color: white;
+            padding: 8px;
+            font-size: 30px;
+        }
+        .center {
+            margin-left: auto;
+            margin-right: auto ;
+            width: 80%;
+        }
+        tr {
+            margin-bottom: 5px;
+        }
+        table {
+            margin: auto;
+        }
+        

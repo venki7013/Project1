@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media Queries</title>
+        <meta name="viewport" content="width= device-width, initial-scale=1.0"> 
+        <style>
+            #id1 {
+                background-color: green;
+                padding: 4px;    
+            }
+            body {
+                background-color: pink;
+            }
+            /* Mobile Devices: 320px-480px */
+            @media only screen and (min-width: 320px) and (max-width: 480px) {
+                #id1{
+                    background-color: blue;
+                    color: white;
+                }
+                body {
+                    background-color: yellow;
+                }
+                h1 {
+                    color: red;
+                }
+            }
+             /* Ipads, Tablets: 481px-768px */
+             @media only screen and (min-width: 481px) and (max-width: 768px) {
+                #id1{
+                    background-color: black;
+                    color: white;
+                }
+                body {
+                    background-color: grey;
+                }
+                h1 {
+                    color: yellow;
+                }
+            }
+             /* Small Screens, Laptops: 769px-1024px */
+             @media only screen and (min-width: 769px) and (max-width: 1024px) {
+                #id1{
+                    background-color: orange;
+                    color: green;
+                }
+                body {
+                    background-color: red;
+                }
+                h1 {
+                    color: pink;
+                }
+            }
+            /* Small Screens, Laptops: 769px-1024px */
+            @media only screen and (min-width: 769px) and (max-width: 1024px) {
+                #id1{
+                    background-color: orange;
+                    color: green;
+                }
+                body {
+                    background-color: red;
+                }
+                h1 {
+                    color: pink;
+                }
+            }
+            /* Small Desktop, Large Screens: 1025px-1200px */
+            @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+                #id1{
+                    background-color: green;
+                    color: white;
+                }
+                body {
+                    background-color: blue;
+                }
+                h1 {
+                    color: orange;
+                }
+            }
+                /* Extra Large Screens, Tvs: 1201px and more */
+             @media only screen and (min-width: 1201px) {
+                #id1{
+                    background-color: white;
+                    color: red;
+                }
+                body {
+                    background-color: green;
+                }
+                h1 {
+                    color: blue;
+                }
+            }
+            /* Orientation */
+            @media only screen and (orientation: landscape) {
+                body {
+                    background-color: black;
+                }
+            }
+            @media only screen and (orientation: portrait) {
+                body {
+                    background-color: green;
+                }
+            }
+        </style>
+    </head>
+    <body>
+            <h1>What is The Viewport?</h1>
+            <p id="id1">
+The viewport is the user's visible area of a web page.
+The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.
+Before tablets and mobile phones, web pages were designed only for computer screens, and it was common for web pages to have a static design and a fixed size.
+Then, when we started surfing the internet using tablets and mobile phones, fixed size web pages were too large to fit the viewport. To fix this, browsers on those devices scaled down the entire web page to fit the screen.
+</p>
+    </body>
+</html>

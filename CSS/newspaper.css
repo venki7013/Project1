@@ -1,0 +1,115 @@
+body {
+    max-height: 100%;
+    max-width: 100%;
+}
+#logo {
+    display: inline-flex;
+    margin-left: 35%;
+    height: 40px;
+    margin-top: 1%;
+}
+.id1 {
+    display: flex;
+    margin-top: 1%;
+    width: 50%;
+    margin-left: 20%;
+    padding: 2px;
+}
+.f1,.f2,.f3,.f4,.f5,.f6 {
+    flex: 1;
+    font-size: 20px;
+    height: 20px;
+    margin-left: 8%;
+    flex-basis: auto;
+    border-top: 4px solid black
+}
+.f1:hover,.f2:hover,.f3:hover,.f4:hover,.f5:hover {
+    color: orangered;
+}
+.f6 {
+    border: 2px solid gray;
+    max-height: 45px;
+    max-width: 25px;
+    padding-left: 4px;
+    position: relative;
+    border-radius: 4px;
+}
+.item:hover {
+    border-bottom: solid red;
+}
+.f6:hover {
+    background-color: gray;
+}
+.id2 {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 24%;
+    gap: 8px;
+    font-size: 13px;
+    color: red;
+}
+.id3 {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 36%;
+    font-size: 14px;
+}
+.g7 {
+    transform: rotate(90deg);
+    color: grey;
+}
+.g6 {
+    opacity: 0.8;
+    color: gray;
+}
+#p1::first-letter {
+    font-size:40px;
+    color: green;
+}
+#p2::first-letter {
+    font-size:40px;
+    color: red;
+}
+#p3::first-letter {
+    font-size:40px;
+    color: blue;
+}
+.container {
+    margin-top: 2%;
+    column-count: 2;
+    box-sizing: border-box;
+    column-gap: 80px;
+    column-rule-style: solid;
+    column-rule-color: brown;
+}
+.item1 {
+    padding: 1px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: orange;
+    color: black;
+}
+.item3 {
+    padding: 4px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: red;
+    color: whitesmoke;
+}
+.item3:hover {
+    animation-timing-function: linear 3s;
+    background-color: orange;
+}
+.item4 {
+    padding: 4px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: red;
+    color: whitesmoke;
+}
+.item4:hover {
+    animation-timing-function: linear 3s;
+    background-color: green;
+}
