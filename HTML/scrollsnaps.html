@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  scroll-snap-type: proximity;
+  width: 30%;
+  margin: 30px auto;
+  display: flex;
+  overflow: auto;
+  height: 300px;
+  border: solid black 2px;
+  cursor: pointer;
+}
+
+.green    { background-color: lightgreen; }
+.pink     { background-color: lightpink; }
+.blue     { background-color: lightblue; }
+.yellow   { background-color: yellow; }
+.grey     { background-color: lightgray; }
+
+#container > div {
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+</style>
+</head>
+<body>
+
+<div id="container">
+  <div class="green" style="display: flex; align-items: center; justify-content: center;"><h1>1</h1></div>
+  <div class="pink" style="display: flex; align-items: center; justify-content: center;"><h1>2</h1></div>
+  <div class="yellow" style="display: flex; align-items: center; justify-content: center;"><h1>3</h1></div>
+  <div class="blue" style="display: flex; align-items: center; justify-content: center;"><h1>4</h1></div>
+  <div class="grey" style="display: flex; align-items: center; justify-content: center;"><h1>5</h1></div>
+</div>
+</body>
+</html>
