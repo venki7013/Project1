@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+	body {
+		background-color: green;
+	}
+    /* Custom styles */
+    .navbar1 {
+      /* Styles for the first navbar */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999; /* Adjust the z-index to make sure it appears above other elements */
+    }
+
+    .navbar2 {
+      /* Styles for the second navbar */
+      position: fixed;
+      top: 133px; /* Adjust the top position to position it below the first navbar */
+      left: 0;
+      width: 100%;
+      z-index: 9999; /* Adjust the z-index to make sure it appears above other elements */
+    }
+  </style>
+</head>
+<body>
+	<!---Nav 1-->
+    <nav class="navbar navbar-default navbar1 navbar-fixed-top" style="margin-bottom: 0;">
+        <div class="container-fluid" style="background-color: lightcyan; align-items: center;">
+          <div class="navbar-header" style="margin-top: 4px; margin-left: 15%;">
+            <img src="./images/Jntupic.png" alt="JNTU Logo" height="120">
+          </div>
+          <ul class="nav navbar-nav" style="margin-left: 10%;">
+            <li><p style=" color: rgba(51,122,183,1); font-size: 28px; margin-bottom: 2px">Jawaharlal Nehru Technological University Anantapur.</p>
+                <p style=" color: red; font-size: 20px; margin-left: 48px; margin-bottom: 2px">జవహర్‌లాల్ నెహ్రూ సాంకేతిక విశ్వవిద్యాలయం అనంతపురం</p>
+                <p style=" color: rgba(51,122,183,1); font-size: 16px; margin-left: 105px;margin-bottom: 2px ">Ananthapuramu, Andhra Pradesh, India Pin : 515002</p>
+                <p style=" color: rgba(51,122,183,1); font-size: 22px; margin-left: 95px; margin-bottom: 2px"><strong>JNTUA Examination Information Center</strong> </li>
+          </ul>
+        </div>
+      </nav>
+	  <!-- Nav 2 -->
+	  <nav class="navbar navbar-inverse navbar2 navbar-fixed-top" style="margin-bottom: 850px;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#" style="font-size: 30px;">JNTU-A</a>
+          </div>
+          <ul class="nav navbar-nav" style="font-size: 20px;">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./administration.html">Administration</a></li>
+            <li><a href="./Genesis.html">Genesis- JNTUA</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+          </ul>
+          <ul>
+            <li class="nav navbar-brand navbar-right" style="font-size: 25px; margin-left: 4px;" title="Close"><a href="#"><i class="fas fa-times" style="color: white;"></i>
+            <li class="nav navbar-brand navbar-right" style="font-size: 25px; margin-left: 4px;" title="Tablet"><a href="#"><i class="fas fa-tablet-alt" style="color: white;"></i>
+            </a></li>
+            <li class="nav navbar-brand navbar-right" style="font-size: 25px; margin-left: 4px;" title="mobile"><a href="#"><i class="fas fa-mobile-alt" style="color: white;"></i></a></li>
+            <li class="nav navbar-brand navbar-right" style="font-size: 25px;" title="Desktop"><a href="#"><i class="fas fa-desktop" style="color: white;"></i>
+            </a></li>
+            </ul>
+        </div>
+      </nav>
+      <!--Administration Page-->
+	  <div class="admin1" style="margin-top: 10%; text-align: center;">
+        <h2>Welcome to our Administration page</h2>
+        <img src="./images/admin.png" alt="administration image" height="500"/>
+      </div>
+</body>
+</html>
