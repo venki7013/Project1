@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        /* background-color: green; */
+        background: linear-gradient(90deg,green, yellow);
+      }
+      #container {
+        margin-left: 15%;
+        margin-top: 5%;
+      }
+      button {
+        border-radius: 10px;
+        height: 40px;
+      }
+    </style>    
+  </head>
+<body>
+  <div id="container"><img id="img" src="krishna.jpg" width="500" height="400" title="Image with reflection" style="-webkit-box-reflect: right;">
+<p><strong style="color: black; margin-left: 27%; font-size: 20px; text-shadow: 2px 2px 2px white;">Click the button to change the image.</strong></p>
+<button onclick="myFunction()" style="background: linear-gradient(90deg,orange,grey);;margin-left: 35%; color: whitesmoke;"><strong>Click Me</strong></button>
+<script>
+function myFunction() {
+  document.getElementById("img").src = "shiva.jpg";
+}
+</script>
+</div>
+</body>
+</html>

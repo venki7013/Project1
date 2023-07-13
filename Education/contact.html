@@ -14,9 +14,27 @@
 		background-color: green;
 	}
     /* Custom styles */
+    .navbar1{
+  position: static;
+}
+.navbar-header {
+  text-align: center;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-nav > li {
+  display: inline-block;
+}
+.navbar-brand {
+  display: block;
+  text-align: center;
+}
+
     .navbar1 {
       /* Styles for the first navbar */
-      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
@@ -25,9 +43,9 @@
 
     .navbar2 {
       /* Styles for the second navbar */
-      position: fixed;
-      top: 133px; /* Adjust the top position to position it below the first navbar */
-      left: 0;
+      position: relative;
+      top: 0; /* Adjust the top position to position it below the first navbar */
+      left: 1;
       width: 100%;
       z-index: 9999; /* Adjust the z-index to make sure it appears above other elements */
     }
