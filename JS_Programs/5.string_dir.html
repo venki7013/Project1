@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Rotation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo1"></p>
+    <script>
+        let name = "w3resource";
+        let output = "";
+        for (let i = 0; i < name.length; i++) {
+            let lastChar = name.charAt(name.length - 1);
+            name = lastChar + name.substring(0, name.length - 1);
+            output += `New string is: ${name}<br>`;
+        }
+        document.getElementById('demo1').innerHTML = output;
+    </script>
+</body>
+</html>

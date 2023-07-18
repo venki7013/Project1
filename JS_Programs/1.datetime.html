@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date_Time</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+let days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let todaydate = new Date();
+let day = days[todaydate.getDay()];
+let hours=todaydate.getHours();
+let mins = todaydate.getMinutes();
+let ms=todaydate.getMilliseconds();
+document.getElementById("demo").innerHTML=`Today is: ${day}`;
+document.getElementById("demo1").innerHTML=`Current time is: ${hours} PM : ${mins} : ${ms}`;
+    </script>
+</body>
+</html>

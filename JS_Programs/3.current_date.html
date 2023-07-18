@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Date</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <pre id="demo1"></pre>
+    <script>
+let todaydate= new Date();
+let year = todaydate.getUTCFullYear();
+let month = todaydate.getUTCMonth();
+let date = todaydate.getUTCDate();
+//template literals
+let fulldate1 = `${month+1}-${date}-${year}`; //months start from 0 to 11.
+let fulldate2 = `${month+1}/${date}/${year}`;
+let fulldate3 = `${date}-${month+1}-${year}`;
+let fulldate4 = `${date}/${month+1}/${year}`;
+document.getElementById("demo1").innerHTML = `${fulldate1}\n${fulldate2}\n${fulldate3}\n${fulldate4}`;
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Pairs</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo1"></p>
+    <script>
+ let num = 1600;
+if(num%4==0)
+{
+    if(num%100==0)
+    {
+        if(num%400==0)
+        {
+            document.getElementById('demo1').innerHTML=`${num} is a Leap Year.`;
+        }
+        else
+        {
+            document.getElementById('demo1').innerHTML=`${num} is not a Leap Year.`;
+        }
+    }
+    else
+        {
+            document.getElementById('demo1').innerHTML=`${num} is a Leap Year.`;
+        }
+    }
+else
+        {
+            document.getElementById('demo1').innerHTML=`${num} is not a Leap Year.`;
+        }
+    </script>
+</body>
+</html>

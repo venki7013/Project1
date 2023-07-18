@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius_Fahrenheit Conversion</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+       let f=45;
+let c = (f-32)*(5/9);
+document.getElementById('demo').innerHTML=`45°F is: ${c} °C`;
+
+let c1=60;
+let f1=(c1*(9/5))+32;
+document.getElementById('demo1').innerHTML=`60°C is: ${f1} °F`;
+    </script>
+</body>
+</html>
