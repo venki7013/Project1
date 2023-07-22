@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Date Method</title>
+    <style>
+        body {
+            background-color: black;
+            font-size: 22px;
+        }
+        p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo1"></p>
+    <hr>
+    <p id="demo2"></p>
+    <hr>
+    <p id="demo3"></p>
+    <hr>
+    <p id="demo4"></p>
+    <hr>
+    <p id="demo5"></p>
+    <hr>
+    <p id="demo6"></p>
+    <hr>
+    <p id="demo7"></p>
+    <hr>
+    <p id="demo8"></p>
+    <hr>
+    <p style="color: yellow"; contenteditable="true";>The following example compares two dates and return true if today's date is gretater than newdate otherwise returns false.</p>
+    <p id="demo9"></p>
+
+    <script>
+        //today date
+        const d = new Date();
+        document.getElementById("demo1").innerHTML=`Today date is: ${d}`;
+        
+        //set year
+        const year = new Date();
+        year.setFullYear(2022,6,21);
+        document.getElementById("demo2").innerHTML=`The year we have set is: ${year.toLocaleDateString()}`;
+        
+        //set month
+        const month = new Date();
+        month.setMonth(3);
+        document.getElementById("demo3").innerHTML=`The month we have set is: ${month.toLocaleDateString()}`;
+        
+        //set date
+        const date = new Date();
+        date.setDate(30);
+        document.getElementById("demo4").innerHTML=`The date we have set is: ${date.toLocaleDateString()}`;
+        
+        //set hours
+        const hours = new Date();
+        hours.setHours(9);
+        document.getElementById("demo5").innerHTML=`The hours we have set is: ${hours.toLocaleTimeString()}`;
+       
+       //set mins
+        const mins = new Date();
+        mins.setMinutes(45);
+        document.getElementById("demo6").innerHTML=`The mins we have set is: ${mins.toLocaleTimeString()}`;
+       
+       //set seconds
+        const ss = new Date();
+        ss.setSeconds(50);
+        document.getElementById("demo7").innerHTML=`The seconds we have set is: ${ss.toLocaleTimeString()}`;
+        
+        //set millseconds
+        const ms = new Date();
+        document.getElementById("demo8").innerHTML=`The milli seconds we have set is: ${ms.setMilliseconds(600)}`;
+        //The actual number 1593703476600 represents the number of milliseconds since the Unix Epoch time corresponding to the date and time after setting the milliseconds to 600. Please note that this number will vary each time you run the code due to the constantly changing current date and time.
+       
+        //The following example compares two dates and return true if today's date is gretater than newdate otherwise returns false.
+        const todaydate = new Date();
+        const newdate= new Date();
+        newdate.setFullYear(2023,6,21);
+        result = todaydate > newdate;
+        new_result = result ? true : false;
+        document.getElementById("demo9").innerHTML=`Result is: ${new_result}`;
+    </script>
+</body>
+</html>
