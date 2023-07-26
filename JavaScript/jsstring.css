@@ -1,0 +1,23 @@
+body {
+    background-color: green;
+    color: yellow;
+    bottom: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    column-count: 2;
+    column-gap: 4%;
+    column-rule-style:solid;
+    column-rule-color: black;
+}
+hr {
+    border-color: white;
+}
+span {
+    color: whitesmoke;
+}
+span:hover {
+    font-size: 30px;
+}
+h4:hover {
+    font-size: 30px;
+}

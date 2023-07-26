@@ -9,6 +9,9 @@
             background-color: black;
             font-size: 22px;
         }
+        p:hover {
+            color: yellow;
+        }
         p {
             color: white;
         }
@@ -37,7 +40,7 @@
     <script>
         //today date
         const d = new Date();
-        document.getElementById("demo1").innerHTML=`Today date is: ${d}`;
+        document.getElementById("demo1").innerHTML=`Today date using getDate() method: ${d}`;
         
         //set year
         const year = new Date();
