@@ -1,0 +1,53 @@
+body 
+{
+   background-color: black;
+}
+.container {
+    height: 190px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17%;
+    margin-bottom: 1%;
+}
+.btn-container {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+}
+#btn{
+    width: 200px;
+    height: 28px;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: black;
+    color: whitesmoke;
+    border: 1px solid white;
+}
+#img {
+    height: 150px;
+    width: 200px;
+    display: flex;
+}
+/* Add the styles for the 'styled-image' class here */
+.styled-image {
+    border: 2px solid blue;
+    border-radius: 10px;
+    animation: rollDiceAnimation 3s infinite;
+}
+/* Define the keyframe animation for rolling the dice */
+@keyframes rollDiceAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
