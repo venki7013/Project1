@@ -40,7 +40,7 @@ body
 .styled-image {
     border: 2px solid blue;
     border-radius: 10px;
-    animation: rollDiceAnimation 3s infinite;
+    animation: rollDiceAnimation 3s;
 }
 /* Define the keyframe animation for rolling the dice */
 @keyframes rollDiceAnimation {
