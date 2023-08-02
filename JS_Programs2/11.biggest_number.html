@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biggest Number</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+       let a = parseInt(prompt("Enter a value: "));
+       let b = parseInt(prompt("Enter b value: "));
+       let c = parseInt(prompt("Enter c value: "));
+       let d = parseInt(prompt("Enter d value: "));
+       let arr=[a,b,c,d];
+       let biggest_number=arr[0];
+       for(let i=0;i<=arr.length-1;i++)
+       {
+        if(arr[0]<arr[i])
+        biggest_number=arr[i];    
+       }
+       document.getElementById('demo').innerHTML=`Biggest number is ${biggest_number}`;
+    </script>
+</body>
+</html>

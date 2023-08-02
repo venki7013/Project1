@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Ticket</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+      let tickets_cost = parseInt(prompt("Enter ticket cost: "));
+      switch(tickets_cost)
+      {
+        case 15: 
+        document.getElementById("demo").innerHTML=`Miyapur to JNTU`;
+        break;
+        case 45: 
+        document.getElementById("demo").innerHTML=`Miyapur to Ameerpet`;
+        break;
+        case 65: 
+        document.getElementById("demo").innerHTML=`Please check ticket costs`;
+        break;
+        default:
+        document.getElementById("demo").innerHTML=`Entered wrong input`;
+      }
+
+    </script>
+</body>
+</html>

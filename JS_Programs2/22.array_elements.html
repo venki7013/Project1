@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Array Elements</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var arr = [];
+        var length = parseInt(prompt("Enter the length of the array:"));
+
+        for (var i = 0; i < length; i++) {
+            let elements = parseInt(prompt(`Enter element ${i + 1}:`));
+            arr.push(elements);
+        }
+
+        document.getElementById("demo").innerHTML = "Array elements: " + arr.join(", ");
+    </script>
+</body>
+</html>

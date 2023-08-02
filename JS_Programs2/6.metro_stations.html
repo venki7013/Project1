@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Stations</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+      let ticket_cost = parseInt(prompt("Enter ticket cost: "));
+      switch(ticket_cost)
+      {
+        case 10: 
+        document.getElementById("demo").innerHTML=`Miyapur to JNTU`;
+        break;
+        case 20: 
+        document.getElementById("demo").innerHTML=`Miyapur to Kukatapally`;
+        break;
+        case 30: 
+        document.getElementById("demo").innerHTML=`Miyapur to Bharatnagar`;
+        break;
+        case 65: 
+        document.getElementById("demo").innerHTML=`Ticket cost is up to Rs 60`;
+        break;
+        default:
+        document.getElementById("demo").innerHTML=`Entered wrong input`;
+      }
+
+    </script>
+</body>
+</html>

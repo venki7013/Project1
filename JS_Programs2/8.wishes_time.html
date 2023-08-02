@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+      let time = parseInt(prompt("Enter time between 0 - 24 hours: "));
+      if(time<12)
+      document.getElementById("demo").innerHTML=`Good Morning`;
+      else if(time>12 && time<18)
+      document.getElementById("demo").innerHTML=`Good After Noon`;
+      else if(time>18 && time<24)
+      document.getElementById("demo").innerHTML=`Good Night`;
+      else
+      document.getElementById("demo").innerHTML=`Entered Wrong Input.`;
+    </script>
+</body>
+</html>

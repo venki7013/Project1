@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Array Even_Odd Elements</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        var arr = [];
+        var length = parseInt(prompt("Enter the length of the array:"));
+
+        for (var i = 0; i < length; i++) {
+            let elements = parseInt(prompt(`Enter element ${i + 1}:`));
+            arr.push(elements);
+        }
+
+        document.getElementById("demo").innerHTML = "Array elements: " + arr.join(", ");
+        let even_numbers=[];
+        let odd_numbers=[];
+        for(let j=0;j<=arr.length-1;j++)
+        {
+            if(arr[j]%2==0)
+            even_numbers.push(arr[j]);
+            else
+            odd_numbers.push(arr[j]);
+        }
+        document.getElementById("demo1").innerHTML+=`Even Numbers are: ${even_numbers}`;
+        document.getElementById("demo2").innerHTML+=`Odd Numbers are: ${odd_numbers}`;
+    </script>
+</body>
+</html>

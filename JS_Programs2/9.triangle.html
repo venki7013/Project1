@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+      let a = parseInt(prompt("Enter side1: "));
+      let b = parseInt(prompt("Enter side2: "));
+      let c = parseInt(prompt("Enter side3: "));
+      if(a===b && b===c)
+      document.getElementById("demo").innerHTML=`Equilateral Triangle`; //An equilateral triangle is a triangle with all three sides of equal length
+      else if(a===b || b===c|| c===a)
+      document.getElementById("demo").innerHTML=`Isosceles Triangle`; //An isosceles triangle is a triangle with two sides of equal length and one side of a different length.
+      else
+      document.getElementById("demo").innerHTML=`Scalene Triangle`; //A scalene triangle is a triangle with all three sides of different lengths.     
+    </script>
+</body>
+</html>

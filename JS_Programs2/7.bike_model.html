@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Stations</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+      let bike_mileage = parseInt(prompt("Enter bike mileage: "));
+      switch(bike_mileage)
+      {
+        case 60: 
+        document.getElementById("demo").innerHTML=`Glamour`;
+        break;
+        case 40: 
+        document.getElementById("demo").innerHTML=`Unicorn`;
+        break;
+        case 34: 
+        document.getElementById("demo").innerHTML=`Royal Enfield`;
+        break;
+        case 80: 
+        document.getElementById("demo").innerHTML=`Bajaj CT100`;
+        break;
+        default:
+        document.getElementById("demo").innerHTML=`Entered wrong input`;
+      }
+
+    </script>
+</body>
+</html>

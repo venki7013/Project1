@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 to 100 Numbers</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo" style="font-size: 25px;"></p>
+    <script>
+      let number = parseInt(prompt("Enter the number: "));
+      for(let i=1;i<=number;i++)
+      {
+        let num1=',';
+       document.getElementById("demo").innerHTML+= i; 
+        if(i<number)
+        document.getElementById("demo").innerHTML+= num1;         
+      }  
+
+    </script>
+</body>
+</html>

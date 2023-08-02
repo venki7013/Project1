@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Common Numbers</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+       function commonNumbers() {
+           const common_num = [];
+           for (let i = 0; i < arr1.length; i++) {
+               for (let j = 0; j < arr2.length; j++) {
+                   if (arr1[i] === arr2[j] && !common_num.includes(arr1[i])) {
+                       common_num.push(arr1[i]);
+                   }
+               }
+           }
+           return common_num;
+       }
+       
+       let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 3, 5, 6, 90];
+       let arr2 = [5, 3, 12, 34, 90, 5, 1, 2, 4];
+       const commonNumbersArray = commonNumbers();
+       document.getElementById("demo").innerHTML = `Common numbers are: ${commonNumbersArray.join(', ')}`;
+    </script>
+</body>
+</html>

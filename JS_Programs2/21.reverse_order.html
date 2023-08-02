@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var number = parseInt(prompt("Enter a number: "));
+        var reversed_number = 0;   
+      do {
+            var last_digit = number % 10;
+            reversed_number = reversed_number * 10 + last_digit;
+            number = Math.floor(number / 10);
+        } while (number > 0);
+
+        document.getElementById("demo").innerHTML = `Reversed Number is: ${reversed_number}`;
+    </script>
+</body>
+</html>

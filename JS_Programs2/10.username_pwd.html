@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+      let user_name = prompt("Enter User name: ");
+      let password = parseInt(prompt("Enter Password: "));
+      let static_user_name = 'venki';
+      let static_password = 12345;
+      if(user_name===static_user_name && password===static_password)
+      document.getElementById("demo").innerHTML=`Log in successfully.`;
+      else if(user_name===static_user_name && password!=static_password)
+      document.getElementById("demo").innerHTML=`Password is incorrect try again`; 
+      else if(user_name!=static_user_name && password===static_password)
+      document.getElementById("demo").innerHTML=`User name is incorrect try again`;      
+      else
+      document.getElementById("demo").innerHTML=`User name and Password are incorrect try again`; 
+    </script>
+</body>
+</html>

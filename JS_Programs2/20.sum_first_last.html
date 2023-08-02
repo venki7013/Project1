@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of first and last numbers</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+      do {
+            var number = prompt("Enter the minimum two-digit number: ");
+         } while (number.length < 2 || isNaN(number));
+            let sum = parseInt(number.charAt(0)) + parseInt(number.charAt(number.length - 1));
+            document.getElementById("demo").innerHTML = `Sum is: ${sum}`;
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Job Eligibility</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+       let age = parseInt(prompt("Enter your age: "));
+       if(age<18)
+       document.getElementById('demo').innerHTML=`Your age is below to work.`;
+       else if(age>=18 && age<60)
+       document.getElementById('demo').innerHTML=`You are eligible for work.`;
+       else
+       document.getElementById('demo').innerHTML=`You are eligible to take pension.`;
+    </script>
+</body>
+</html>
