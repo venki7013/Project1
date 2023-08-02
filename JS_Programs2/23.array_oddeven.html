@@ -17,9 +17,7 @@
         for (var i = 0; i < length; i++) {
             let elements = parseInt(prompt(`Enter element ${i + 1}:`));
             arr.push(elements);
-        }
-
-        document.getElementById("demo").innerHTML = "Array elements: " + arr.join(", ");
+        }        
         let even_numbers=[];
         let odd_numbers=[];
         for(let j=0;j<=arr.length-1;j++)
@@ -29,6 +27,7 @@
             else
             odd_numbers.push(arr[j]);
         }
+        document.getElementById("demo").innerHTML = "Array elements: " + arr.join(", ");
         document.getElementById("demo1").innerHTML+=`Even Numbers are: ${even_numbers}`;
         document.getElementById("demo2").innerHTML+=`Odd Numbers are: ${odd_numbers}`;
     </script>
